@@ -8,7 +8,7 @@ def check_winner(res, t):
     s = "O" if t % 2 == 0 else "X"
 
     if res[0] == res[1] == res[2] == s or res[3] == res[4] == res[5] == s or res[6] == res[7] == res[8] == s or \
-            res[6] == res[7] == res[8] == s or res[0] == res[3] == res[6] == s or res[1] == res[4] == res[7] == s or \
+            res[0] == res[3] == res[6] == s or res[1] == res[4] == res[7] == s or \
             res[2] == res[5] == res[8] == s or res[0] == res[4] == res[8] == s or res[2] == res[4] == res[6] == s:
         if s == "X":
             return 1  # Выйграл первый игрок
